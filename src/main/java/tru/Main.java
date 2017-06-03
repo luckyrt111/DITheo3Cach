@@ -1,4 +1,4 @@
-package tinhtong;
+package tru;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -9,8 +9,8 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class Main {
     public static void main(String[] args) {
         ApplicationContext context = new ClassPathXmlApplicationContext("beans.xml");
-        TinhTong1 tt1 = context.getBean("123",TinhTong1.class);
-        int sum = tt1.add(1,2);
-        System.out.println(sum);
+        Tru1 tru1 = context.getBean("tru1",Tru1.class);
+        int tru = tru1.tru(2,1);
+        System.out.println(tru);
     }
 }
